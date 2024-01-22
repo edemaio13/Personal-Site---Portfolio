@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EricDeMaio.com | Lifelist</title>
+    <link rel="icon" type="image/png" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+
+<!--Main Bootstap Container-->
+  <div class="container">
+    
+    <!--NAVIGATION-->
+      <nav id="nav-bar" class="navbar navbar-dark navbar-expand-md bg-body-tertiary bg-navigation bg-custom d-flex">
+       <h3><a class="nav-link" href="index.html"><span id="header-logo">EricDeMaio.com</span></a></h3>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul id="navbar-headtext" class="navbar-nav ms-3">
+            <li class="nav-item">
+              <a class="nav-link me-4 current" href="about.html">about</a></li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="portfolio.html">portfolio</a></li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="music.html">music</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  <!--END NAVIGATION-->
+      
+
+
+    <!--Main Bootstrap Layout-->
+    <main>
+
+      <article class="p-2">  
+    
+      
+
+          <h2><a href="about.html"><span style="color:white;">About</span></a> | <span style="color: #09a8cf; font-style: italic;">Birdwatching Lifelist</span></h2>
+
+        <div class="row p-2">
+            <div class="col-8 col-sm-7 col-lg-6 text-justify">
+                <p>Birdwatching is quite the rewarding hobby. Knowledge of the birds around you can 
+                    create an excitement to your everyday life. As we begin to identify different birds,
+                    fellow enthusiasts will compile a <strong>lifelist. </strong>A lifelist can take many forms from
+                    a simple journal, to a smartphone app. As a means to practice my web design chops, I've
+                    decided to compile my own lifelist here. I hope you enjoy. <span style="color: #09a8cf">Note: these images were sourced from wikipedia.</span>
+                </p>
+            </div>
+
+            <div class="col-4 col-sm-5 col-lg-6">
+                <img src="images/bird04.png">
+            </div>
+
+        </div>
+
+
+        <p>
+            <button class="btn btn-primary ml-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Add a bird
+            </button>
+
+            
+        </p>
+
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body bg-card">
+       
+            <!--Add a Bird Row-->
+            <div class="row justify-content-center pl-2 pr-2">
+                
+                <h4><span class="card-head">ADD A NEW BIRD</span></h4>
+            
+                    
+            <form id="birdForm" class="row">
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    
+                    <label for="birdName" class="form-label text-dark mb-0"><h5 class="card-title">Bird Name:</h5></label>
+                    <input type="text" class="form-control mb-4" id="birdName" required>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <label for="date" class="form-label text-dark mb-0"><h5 class="card-title">Date:</h5></label>
+                    <input type="date" class="form-control mb-4" id="date" required>
+                
+                </div>
+
+                <div class="col-9 col-lg-4">
+
+                    <label for="extLink" class="form-label text-dark mb-0"><h5 class="card-title">External Link:</h5></label>
+                    <input type="text" id="extLink" class="form-control mb-4" required>
+                
+                </div>
+
+                <div class="col-12">
+
+                    <label for="notes" class="form-label text-dark mb-0"><h5 class="card-title">Notes:</h5></label>
+                    <textarea id="notes" class="form-control mb-4"></textarea>
+                
+                </div>
+
+                <div class="col-4">
+
+                    <label for="password" class="form-label text-dark mb-0"><h5 class="card-title">Password:</h5></label>
+                    <input type="password" id="password" class="form-control" required>
+                
+                </div>
+
+                <div class="col-12 mt-4">
+
+                    <button type="submit" class="btn btn-dark">Add Bird</button>
+
+                </div>
+
+            </form>
+
+            <ul id="birdList"></ul>
+
+        </div>
+            </div>
+
+
+          </div>
+        
+
+
+
+
+
+                
+
+        
+
+
+
+
+    
+
+              <!--Main Lifelist-->
+                
+                <!--Main Row-->
+                <div id="life-list" class="col-12 col-sm-12 col-lg-12 mt-5">
+                    
+                    <!--Main List-->
+                    <ol class="list-group list-group-numbered" start="1">
+                        
+                        <!--Bird One-->
+                        <li class="list-group-item">
+                            
+                            <!--Header Row-->
+                            <div class="row">
+                                <div class="col-8 col-lg-12 bird-name">
+                                    <h4>American Crow</h4>
+                                </div>
+                                
+                                <div class="col-4 col-md-4 col-lg-12 pl-lg-4">
+                                    <b>Date:</b> <span class="bird-head">n/a</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 text-justify pt-2 pl-sm-4">
+                                    <b>Notes:</b> I've been seeing crows since I was a child.
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pt-3 text-center">
+                                    <a href="images/americancrow.jpg" target="_blank"><img class="img-fluid" src="images/americancrow_tn.jpg"></a>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-4 pt-4 text-center">
+                                    External Link: <a href="https://en.wikipedia.org/wiki/American_crow" target="_blank">wikipedia</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Bird Two-->
+                        <li class="list-group-item">
+                            
+                            <!--Header Row-->
+                            <div class="row">
+                                <div class="col-8 col-lg-12 bird-name">
+                                    <h4>American Goldfinch</h4>
+                                </div>
+                                
+                                <div class="col-4 col-md-4 col-lg-12 pl-lg-4">
+                                    <b>Date:</b> <span class="bird-head">n/a</span></h6>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 text-justify pt-2 pl-sm-4">
+                                    <b>Notes:</b> I started seeing the <em>goldfinch </em>pretty soon after I began birdwatching.
+                                    I've seen them at my parent's house, at our house on the special seed feeder
+                                    that Jamie bought, and many other places.
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pt-3 text-center">
+                                    <a href="images/goldfinch.jpg" target="_blank"><img src="images/goldfinch_tn.jpg" class="img-fluid"></a>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-4 pt-4 text-center">
+                                    External Link: <a href="https://en.wikipedia.org/wiki/American_goldfinch" target="_blank">wikipedia</a>
+                                </div>
+                            </div>
+                        </li>
+                            
+
+                    </ol>
+
+
+
+
+
+                </div>
+
+
+           
+
+             
+
+
+                
+
+
+
+        
+                    
+
+                </article>
+
+
+
+
+
+            </main>
+
+
+
+  
+    
+
+
+
+
+
+    <section>
+      <div class="row">
+          <!--Quote of the day-->
+                <div class="col-12 quote-of-day" onclick="displayRandomQuote()">
+                  <span data-toggle="tooltip" title="Click for more quotes!" data-placement="top">random thought to feed your soul</span>
+                  <p id="random-quote" class="quote-of-day" data-toggle="tooltip" title="Click for more quotes!" data-placement="top"></p>
+                </div>
+      </div>
+    </section>
+      
+      
+    <!--Footer Content-->
+      <footer>
+
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                      &copy; <span id="year"></span> | Eric DeMaio.com | All Rights Reserved</small>
+            
+                    </p>
+                </div>
+            </div>
+    
+      </footer>        
+
+          
+    
+
+      <!--Below /div ends main bootstrap container-->
+      </div>
+
+      <div id="back-to-top">
+      <a href="#top" class="back-to-top">Back to Top</a>
+      </div>
+
+
+
+
+
+
+
+
+
+<!--Random Quote Script-->
+<script src="quoteday.js"></script>
+<script>
+  // Get the current year and update the year element
+  var year = new Date().getFullYear();
+  document.getElementById("year").textContent = year;
+</script>
+
+
+
+
+
+
+
+<!--Back to Top Script-->
+
+<script>
+  window.addEventListener('scroll', function() {
+    var backToTopLink = document.querySelector('.back-to-top');
+    if (window.scrollY > window.innerHeight /.5) {
+        backToTopLink.style.display = 'block';
+    } else {
+        backToTopLink.style.display = 'none';
+    }
+});
+</script>
+
+<!--Bootstrap, Popper, and Jquery-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+/* MAIN CSS */
+
+        body {
+            background-color: #031a30 !important;
+        }
+        
+        main {
+            color: #fff;
+            background-color: #042c52;
+            background-image: linear-gradient(to bottom, #042c52, #031a30) !important;
+            
+        }
+
+        form .text-info {
+            color:#09a8cf !important;
+        }
+
+        main .text-info {
+            color:#09a8cf !important;
+
+        }
+
+        .container {
+        
+        }
+
+        
+/* END MAIN CSS */
+
+
+
+/* .-"-. NAVBAR STYLES .-"-. */
+
+
+
+    /* Nav Background Color Fix */
+        .bg-custom {
+            background-color: #09a8cf;
+        }
+
+    /* Header Color */
+        #header-logo  {
+            color: #031a30 !important;
+            text-decoration: none !important;
+            font-family: 'Vina Sans', helvetica, arial, sans-serif;
+            font-size: 1.5em;
+            font-weight: normal;
+
+        }
+
+    /* Nav links shift down when clicked */
+        .nav-item a:active {
+            top: 2px;
+        }
+
+        
+
+    /* Navbar Link Color */
+        #navbar-headtext a {
+
+            color: rgba(255, 255, 255, .7) !important;
+            font-weight: bold;
+            letter-spacing: .1em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            position: relative;
+            transition: top 0.2s;
+            transition: color .2s ease-in-out;
+
+        
+        }
+
+
+
+        #navbar-headtext a:hover {
+            color:#042c52 !important; 
+
+        }
+
+    /* Navbar Current Page */
+        #navbar-headtext a.current {
+            color: #031a30 !important;
+        }
+
+
+
+
+
+
+/* .-"-. END NAVBAR STYLES .-"-. */ 
+
+
+
+/* .-"-. PAGE STRUCTURE DIVS .-"-. */ 
+               
+        footer {
+            padding-top: 20em;
+            color: rgba(255,255,255, .4);
+            text-align: center;
+            background-image: linear-gradient(to bottom, #031a30, #020e1b);
+        }
+
+
+
+/* .-"-. END STRUCTURE DIVS .-"-. */
+
+
+
+/* .-"-. LINK STYLES .-"-. */
+
+
+
+    /* Main Remove link underlines */
+        main a:hover {
+            text-decoration: none !important;
+        }
+
+    /* Show/Hide details link */
+        p.toggle-link {
+            color:#09a8cf !important;
+            text-decoration: none;
+            font-size: .8em;
+        }
+
+    /* Main Link Style */
+        article a:link, a:visited {
+            color: #39b0ce;
+            text-decoration: none;
+        }
+
+    /* Hover Color Change on Links */
+        article a:hover, article a:visited:hover, aside a:hover, aside a:visited:hover {
+            text-decoration: underline;
+            color:#3497af;
+        }
+
+        aside a:link {
+            color: #39b0ce;
+        }
+
+        aside a:hover, aside a:visited:hover  {
+            color: #3497af;
+            text-decoration: underline;
+        }
+
+/* .-"-. END LINK STYLES .-"-. */
+
+
+
+/* .-"-. HEADER STYLES .-"-. */
+
+
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 4px 2px 1px rgba(0, 0, 0, 1);
+            margin: 1em;
+        }
+
+        h2 {
+            margin: 0em 0em .5em .5em;
+            
+        }
+
+        h3 {
+            margin: 0em 0em 0em .5em;
+        }
+
+        h5 {
+            letter-spacing: .1em;
+        }
+
+
+
+/* .-"-. END HEADER STYLES .-"-. */ 
+
+
+/* .-"-. ELEMENT STYLES .-"-. */ 
+
+
+
+        #bc-bg {
+            background-color: #042c52 !important;
+        }
+
+        #bc-bg2 {
+            background-color: #042c52 !important;
+        }
+
+        /* Card Colors */
+
+        .bg-card {
+            background-color:#09a8cf !important;
+        }
+
+        .card-head {
+            color:#031a30;
+        }
+
+
+
+/* .-"-. TABLE STYLES .-"-. */ 
+
+
+
+        table th {
+            padding: .5em;
+            
+        }
+
+        td {
+
+            padding: 1em;
+            vertical-align: top;
+        }
+
+
+
+/* .-"-. END TABLE STYLES .-"-. */ 
+
+
+
+/* .-"-. MORE SPECIFIC STYLES .-"-. */ 
+
+
+
+    /* Aside Header */
+        .aside-style h4 {
+            color: #39b0ce;
+        }
+
+    /* Aside Images */    
+        .aside-style img {
+            
+            opacity: .5;
+            
+        }
+
+    /* Quote of Day Header */
+        .quote-of-day span {
+            font-style: italic;
+            color:rgba(9, 168, 207, .6);
+            font-size: 1.4em;
+            padding: 2em;
+            text-shadow: #000 3px 3px 2px;
+        }
+
+    /* Quote of Day Text */
+        .quote-of-day {
+            padding-right: 1em;
+        }
+
+        .quote-of-day {
+            background-color: #031a30;
+            text-align: right;
+            
+            color: rgba(122, 185, 201, 0.5);
+            font-size: 1.1em;        
+            font-style: italic;
+            padding-top: 1em;
+        }
+
+        .quote-of-day p {
+            text-shadow: #000 2px 2px 2px;
+        }
+
+    /* Carousel Custom CSS */
+        /* Carousel base class */
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+        
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 30rem;
+            max-width: 100vw;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        .welcome-carousel-image1{
+            box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+            background-image:url('images/carousel1.png');
+        }
+
+        .welcome-carousel-image2{
+            box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+            background-image:url('images/carousel2.png');
+        }
+
+        .welcome-carousel-image3{
+            box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+            background-image:url('images/carousel3.jpg');
+        }
+
+        button.carousel-control-next, button.carousel-control-prev {
+            background-color: rgba(0, 0, 0, 0.4) !important;
+            
+        }
+
+        .carousel-shadow {
+
+            text-shadow: #000 3px 2px;
+        }
+
+
+
+    /* Lifelist Rules */
+        #lifelist {
+            padding-right: 35px;
+        }
+
+        #lifelist li {
+
+            /*margin-top: 1.5em;*/
+            /*border: 1px solid black;*/
+            padding: .5em .5em .5em .3em;
+            border-top: 1px solid #031a30;
+            border-right: 1px solid #031a30;
+            border-left: 1px solid #031a30;
+            
+        }
+
+        #lifelist li:last-of-type {
+            border-bottom: 1px solid black;
+        }
+
+        #life-list img {
+
+            border: 3px solid rgba(0, 0, 0, 0.3);
+        }
+
+        ol li:nth-of-type(even) {
+
+            background-color: #063968 !important;
+        
+        }
+        
+        ol li:nth-of-type(odd) {
+        
+            background-color: #12497c !important;
+        
+        }
+
+        .bird-name h4 {
+            color:#63cfeb;
+        }
+
+        .bird-head {
+            color: #63cfeb;
+        }
+
+    /* END LIFELIST RULES */
+
+
+
+/* .-"-. END MORE SPECIFIC STYLES .-"-. */ 
+
+
+
+/* .-"-. SPECIAL TWEAKS .-"-. */ 
+
+
+
+    /* Change cursor when hovering over div */
+        .quote-of-day:hover {
+            user-select: none;
+        }
+
+    /* Half transparency class */
+        .image-trans {
+            opacity: 0.5;
+        }
+
+    /* Back to Top CSS */
+
+        a[href="#top"] {
+            position: fixed;
+            bottom: 60px;
+            right: 100px;
+            background-color: rgba(7, 50, 61, 0.8);
+            padding: .5em;
+            border: 1px solid black;
+        }
+
+        .back-to-top {
+            display: none;
+        }
+
+        #back-to-top a {
+            text-decoration: none;
+        }
+
+        #back-to-top a:hover {
+            color:#0e87a5;
+            text-decoration: none;
+        }
+
+
+
+    /* End Back to Top CSS */
+
+
+
+    /* collapse */
+
+        table {
+            border-collapse: collapse;
+            /*margin-bottom: 10px;*/
+        }
+        th, td {
+            border: 1px solid #0e87a5;
+            /*padding: 5px;*/
+        }
+        .toggle-link {
+            cursor: pointer;
+            text-decoration: underline;
+            user-select: none;
+            
+        }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EricDeMaio.com</title>
+    <link rel="icon" type="image/png" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+
+<!--Main Bootstap Container-->
+  <div class="container">
+    
+    <!--NAVIGATION-->
+      <nav id="nav-bar" class="navbar navbar-dark navbar-expand-md bg-body-tertiary bg-navigation bg-custom d-flex">
+        <h3><a class="nav-link disabled"><span id="header-logo">EricDeMaio.com</span></a></h3>
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul id="navbar-headtext" class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link me-4" href="about.html">about</a></li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="portfolio.html">portfolio</a></li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="music.html">music</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    <!--END NAVIGATION-->
+
+
+    <!--Main Bootstrap Grid Layout-->
+        <main>
+          <div class="row">
+
+            <!--Left Column-->
+              <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-4 left-col-cust">
+                <article class="p-3">
+                  <h2 class="text-info">Welcome!</h2>
+                  <p>Feel free to visit my <a href="portfolio.html">portfolio</a>
+                     to see some of my previous work in graphic design, a/v production, 
+                     web design projects, and photography.</p>
+                  <p>Check out the <a href="music.html">music</a> section to listen to 
+                     some of my compositions.</p>
+                  <p>Finally, <a href="contact.html">contact me</a> if you'd like to 
+                     discuss freelance opportunities.</p>
+                  <h3>Thanks!</h3>
+                    
+                </article>
+              </div>
+         
+            <!--Middle Column-->
+              <section class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-5">
+                <img src="images/profilepicsmall.png" class="img-fluid" alt="Illustration of Eric" />
+              </section>     
+          
+            <!--Right Column-->
+              <aside class="aside-style text-center col-12 col-md-3 col-lg-3 col-xl-3 my-5 pr-5">
+                  <h4><em>Did you know?</em></h4>
+                  <p><small>I've been a casual birdwatcher for over ten years now.<br><a href="lifelist.html">See my lifelist</small></p>
+                  <img src="images/bird03.png" width="120" class="img-trans"></a>
+                
+              </aside>  
+           
+          </div>
+    <!--Ends Bootstrap Grid Layout Row-->
+        </main>
+
+    <!--Quote of the Day-->    
+      <section>
+        <div class="row">
+              <div class="col-12 quote-of-day" onclick="displayRandomQuote()">
+                <span data-toggle="tooltip" title="Click for more quotes!" data-placement="top">random thought to feed your soul</span>
+                <p id="random-quote" class="quote-of-day" data-toggle="tooltip" title="Click for more quotes!" data-placement="top"></p>
+              </div>
+        </div>
+      </section>
+          
+    <!--Footer Content-->
+      <footer>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              &copy; <span id="year"></span> | Eric DeMaio.com | All Rights Reserved</small>
+            </p>
+          </div>
+        </div>
+      </footer>             
+    
+    </div><!--ends main bootstrap container-->
+
+<!--SCRIPTS-->
+<!--Random Quote Script-->
+  <script src="quoteday.js"></script>
+  <script>
+      // Get the current year and update the year element
+      var year = new Date().getFullYear();
+      document.getElementById("year").textContent = year;
+  </script>
+
+<!--Bootstrap, Popper, and Jquery-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
